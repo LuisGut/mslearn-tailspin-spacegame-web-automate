@@ -36,7 +36,7 @@ resource "random_integer" "app_service_name_suffix" {
 
 resource "azurerm_app_service_plan" "spacegame" {
   name                = var.app_service_plan_name
-  location            = azurerm_resource_group.spacegame.location
+  location            = var.resource_group_location
   resource_group_name = var.resource_group_name
   kind                = "Linux"
   reserved            = true
