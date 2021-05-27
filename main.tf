@@ -54,9 +54,7 @@ resource "azurerm_app_service" "spacegame_dev" {
   app_service_plan_id = azurerm_app_service_plan.spacegame.id
 
   site_config {
-    linux_fx_version = "DOTNETCORE|3.1"
     dotnet_framework_version = "v4.0"
-    app_command_line = "dotnet Tailspin.SpaceGame.Web.dll"
   }
 }
 
