@@ -60,7 +60,7 @@ resource "azurerm_app_service" "spacegame_dev" {
 
   site_config {
     linux_fx_version = "DOTNETCORE|3.1"
-    dotnet_framework_version = "v3.1"
+    dotnet_framework_version = "v4.0"
     app_command_line = "dotnet Tailspin.SpaceGame.Web.dll"
   }
 }
